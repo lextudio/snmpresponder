@@ -3,7 +3,7 @@
 # This file is part of snmpresponder software.
 #
 # Copyright (c) 2019, Ilya Etingof <etingof@gmail.com>
-# License: http://snmplabs.com/snmpresponder/license.html
+# License: https://www.pysnmp.com/snmpresponder/license.html
 #
 import os
 import sys
@@ -399,7 +399,7 @@ Synopsis:
   tool's configuration.
 
 Documentation:
-  http://snmplabs.com/snmpresponder/
+  https://www.pysnmp.com/snmpresponder/
 
 %s
 """ % helpMessage)
@@ -412,7 +412,7 @@ Documentation:
 SNMP Command Responder version %s, written by Ilya Etingof <etingof@gmail.com>
 Using foundation libraries: pysnmp %s, pyasn1 %s.
 Python interpreter: %s
-Software documentation and support at http://snmplabs.com/snmpresponder/
+Software documentation and support at https://www.pysnmp.com/snmpresponder/
 %s
 """ % (snmpresponder.__version__, hasattr(pysnmp, '__version__') and pysnmp.__version__ or 'unknown',
                hasattr(pyasn1, '__version__') and pyasn1.__version__ or 'unknown', sys.version, helpMessage))

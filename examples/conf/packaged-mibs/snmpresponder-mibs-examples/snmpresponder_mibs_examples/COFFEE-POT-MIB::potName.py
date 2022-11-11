@@ -3,11 +3,11 @@
 This Python module is designed to be imported and executed by the
 pysnmp library.
 
-See http://snmplabs.com/pysnmp for further information.
+See https://www.pysnmp.com/pysnmp for further information.
 
 Notes
 -----
-ASN.1 source http://mibs.snmplabs.com:80/asn1/COFFEE-POT-MIB
+ASN.1 source http://mibs.pysnmp.com:80/asn1/COFFEE-POT-MIB
 Produced by pysmi-0.4.0 at Sat Jan 12 14:01:57 2019
 On host igarlic platform Darwin version 17.7.0 by user ilya
 Using Python version 3.6.0 (v3.6.0:41df79263a11, Dec 22 2016, 17:23:13)
@@ -43,7 +43,7 @@ class PotnameObjectInstance(MibScalarInstance):
     them to the data source they want to manage through SNMP.
     Non-overridden methods could just be removed from this class.
 
-    See the SMI data model documentation at `http://snmplabs.com/pysnmp`.
+    See the SMI data model documentation at `https://www.pysnmp.com/pysnmp`.
     """
     def readTest(self, varBind, **context):
         cbFun = context['cbFun']

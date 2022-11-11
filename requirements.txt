@@ -1,2 +1,0 @@
-#pysnmp>=5.0.0
-git+git://github.com/etingof/pysnmp@master#egg=pysnmp

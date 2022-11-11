@@ -25,9 +25,9 @@ SNMP Command Responder is configured to:
 :download:`Download </../../examples/conf/rest-api-backend/snmpresponderd.conf>` configuration file.
 
 The only implemented managed object
-`SNMPv2-MIB::sysName.0 <http://mibs.snmplabs.com/asn1/SNMPv2-MIB>`_:
+`SNMPv2-MIB::sysName.0 <http://mibs.pysnmp.com/asn1/SNMPv2-MIB>`_:
 
-* gathers its value from a `REST API call <http://demo.snmplabs.com/redfish/v1/Systems/437XR1138R2>`_
+* gathers its value from a `REST API call <http://demo.pysnmp.com/redfish/v1/Systems/437XR1138R2>`_
 * REST API call is done asynchronously, from separate thread(s)
 * only SNMP read operations are implemented
 * write operation are allowed, but has no effect

@@ -3,7 +3,7 @@
 This Python module is designed to be imported and executed by the
 pysnmp library.
 
-See http://snmplabs.com/pysnmp for further information.
+See https://www.pysnmp.com/pysnmp for further information.
 
 Notes
 -----

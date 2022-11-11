@@ -47,9 +47,9 @@ How to use SNMP Command Responder
 ---------------------------------
 
 First you need to configure the tool. It is largely driven by
-[configuration files](http://snmplabs.com/snmpresponder/configuration/index.html)
+[configuration files](https://www.pysnmp.com/snmpresponder/configuration/index.html)
 written in a declarative mini-language. To help you started, we maintain
-[a collection](http://snmplabs.com/snmpresponder/configuration/index.html#examples)
+[a collection](https://www.pysnmp.com/snmpresponder/configuration/index.html#examples)
 of configuration files designed to serve specific use-cases.
 
 Getting help

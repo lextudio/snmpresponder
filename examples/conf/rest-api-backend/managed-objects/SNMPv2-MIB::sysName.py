@@ -3,7 +3,7 @@
 This Python module is designed to be imported and executed by the
 pysnmp library.
 
-See http://snmplabs.com/pysnmp for further information.
+See https://www.pysnmp.com/pysnmp for further information.
 
 Notes
 -----
@@ -50,7 +50,7 @@ def load_url(url, timeout):
 
 class SysnameObjectInstance(MibScalarInstance):
 
-    REDFISH_SYSTEM_URL = 'http://demo.snmplabs.com/redfish/v1/Systems/437XR1138R2'
+    REDFISH_SYSTEM_URL = 'http://demo.pysnmp.com/redfish/v1/Systems/437XR1138R2'
 
     def readTest(self, varBind, **context):
         # Just confirm that this MIB object instance is available

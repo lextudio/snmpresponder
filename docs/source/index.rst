@@ -32,7 +32,7 @@ Responders (which is the main part of the
 
 The main goal of SNMP is to expose interesting traits of a system being managed
 through SNMP in terms of the SNMP/SMI data model. The SNMP responder package
-leverages `PySMI <http://snmplabs.com/pysmi>`_ project's ability to build the
+leverages `PySMI <https://www.pysnmp.com/pysmi>`_ project's ability to build the
 boilerplate Python code from ASN.1 MIB files. The generated code should then be
 adapted by the user by linking the MIB objects to the actual system objects or
 data sources to expose or manage through SNMP. The SNMP responder tool will

@@ -27,7 +27,7 @@ SNMP Command Responder is configured to:
 :download:`Download </../../examples/conf/single-agent-single-mib-tree/snmpresponderd.conf>` configuration file.
 
 The only implemented managed object
-`SNMPv2-MIB::sysName.0 <http://mibs.snmplabs.com/asn1/SNMPv2-MIB>`_:
+`SNMPv2-MIB::sysName.0 <http://mibs.pysnmp.com/asn1/SNMPv2-MIB>`_:
 
 * gathers its value from a Python call
 * only SNMP read operations are implemented

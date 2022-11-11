@@ -10,7 +10,7 @@ it on the network as SNMP agent(s).
 The primary way of interfacing user data source with SNMP Command Responder
 involves two steps:
 
-* Using the `pysmi <http://snmplabs.com/pysmi>`_ project to compile ASN.1 MIB(s)
+* Using the `pysmi <https://www.pysnmp.com/pysmi>`_ project to compile ASN.1 MIB(s)
   into stubs of Python code
 * Interfacing the desired objects with the intended data sources by adding
   custom Pythob code into the hooks
@@ -19,7 +19,7 @@ Example workflow
 ----------------
 
 Let's step through the MIB object implementaton workflow using the
-`SNMPv2-MIB::sysName.0 <http://mibs.snmplabs.com/asn1/SNMPv2-MIB>`_ managed
+`SNMPv2-MIB::sysName.0 <http://mibs.pysnmp.com/asn1/SNMPv2-MIB>`_ managed
 object as an example.
 
 .. _mib-implementation-compilation:
@@ -37,7 +37,7 @@ One of the
 *pysmi* ships can generate MIB instrumentation stubs for managed objects instances i.e.
 the leaf MIB objects representing the instances of MIB scalars of tabular objects.
 
-We can just call the `mibdump <http://snmplabs.com/pysmi/mibdump.html>`_ tool passing
+We can just call the `mibdump <https://www.pysnmp.com/pysmi/mibdump.html>`_ tool passing
 it the above mentioned template:
 
 .. code-block:: bash
@@ -77,7 +77,7 @@ to SNMP GET/GETNEXT and GETBULK commands.
         them to the data source they want to manage through SNMP.
         Non-overridden methods could just be removed from this class.
 
-        See the SMI data model documentation at `http://snmplabs.com/pysnmp`.
+        See the SMI data model documentation at `https://www.pysnmp.com/pysnmp`.
         """
         def readTest(self, varBind, **context):
             # Put your code here
@@ -202,7 +202,7 @@ run it from command line):
     This Python module is designed to be imported and executed by the
     pysnmp library.
 
-    See http://snmplabs.com/pysnmp for further information.
+    See https://www.pysnmp.com/pysnmp for further information.
 
     Notes
     -----
@@ -222,7 +222,7 @@ this:
 .. code-block:: bash
 
     snmpv2-mib-objects {
-      mib-text-search-path-list: http://mibs.snmplabs.com/asn1/
+      mib-text-search-path-list: http://mibs.pysnmp.com/asn1/
       mib-code-modules-pattern-list: /etc/snmpresponder/managed-objects/.*py[co]?
 
       mib-tree-id: managed-objects-1
@@ -246,7 +246,7 @@ regexp:
 .. code-block:: bash
 
     snmpv2-mib-objects {
-      mib-text-search-path-list: http://mibs.snmplabs.com/asn1/
+      mib-text-search-path-list: http://mibs.pysnmp.com/asn1/
       mib-code-packages-pattern-list: mypackage\..*
 
       mib-tree-id: managed-objects-1

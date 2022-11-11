@@ -442,7 +442,7 @@ Command Responder and served to SNMP managers.
 .. code-block:: bash
 
     managed-objects-group {
-      mib-text-search-path-list: http://mibs.snmplabs.com/asn1/
+      mib-text-search-path-list: http://mibs.pysnmp.com/asn1/
       mib-code-modules-pattern-list: ${config-dir}/managed-objects/.*py[co]?
 
       mib-tree-id: managed-objects-1
@@ -471,7 +471,7 @@ Command Responder and served to SNMP managers.
 .. code-block:: bash
 
     managed-objects-group {
-      mib-text-search-path-list: http://mibs.snmplabs.com/asn1/
+      mib-text-search-path-list: http://mibs.pysnmp.com/asn1/
       mib-code-packages-pattern-list: examples\..*
 
       mib-tree-id: managed-objects-1
@@ -493,7 +493,7 @@ Unique identifier of a MIB tree instance. It's used solely for SNMP message rout
 
     mib-tree-group {
 
-        mib-text-search-path-list: http://mibs.snmplabs.com/asn1/
+        mib-text-search-path-list: http://mibs.pysnmp.com/asn1/
 
         network-mibs {
             mib-code-modules-pattern-list: conf/generic/managed-objects/(IF-MIB|UDP-MIB).py

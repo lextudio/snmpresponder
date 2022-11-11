@@ -8,14 +8,14 @@ packages extending the *snmpresponder.mibs*
 
 The main advantage of packaged MIBs is easier distribution. That might make more sense for
 generally useful and reusable MIB implementations such as
-`HOST-RESOURCES-MIB <http://mibs.snmplabs.com/asn1/HOST-RESOURCES-MIB>`_.
+`HOST-RESOURCES-MIB <http://mibs.pysnmp.com/asn1/HOST-RESOURCES-MIB>`_.
 
 This example configuration includes
 `example Python package <https://github.com/etingof/snmpresponder/tree/master/examples/conf/packaged-mibs/snmpresponder-mibs-examples>`_,
 which could be used as a blueprint for packaging other MIB implementations.
 
 You could test this configuration by running the following command (you may need to have
-`COFFEE-POT-MIB <http://mibs.snmplabs.com/asn1/COFFEE-POT-MIB>`_ installed
+`COFFEE-POT-MIB <http://mibs.pysnmp.com/asn1/COFFEE-POT-MIB>`_ installed
 locally):
 
 .. code-block:: bash
@@ -38,7 +38,7 @@ SNMP Command Responder is configured to:
 :download:`Download </../../examples/conf/packaged-mibs/snmpresponderd.conf>` configuration file.
 
 The only implemented, read-only managed object is
-`COFFEE-POT-MIB::potName.0 <http://mibs.snmplabs.com/asn1/COFFEE-POT-MIB>`_:
+`COFFEE-POT-MIB::potName.0 <http://mibs.pysnmp.com/asn1/COFFEE-POT-MIB>`_:
 
 * serves a static value for *COFFEE-POT-MIB::potName.0* object
 * only SNMP read operations are implemented
