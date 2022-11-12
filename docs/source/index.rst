@@ -93,7 +93,7 @@ The easiest way to download and install SNMP Responder is via Python `pip` tool:
    # pip install snmpresponder
 
 Alternatively, you can download the Python package from
-`GitHub repo <https://github.com/etingof/snmpresponder/releases>`_ and install is manually.
+`GitHub repo <https://github.com/lextudio/snmpresponder/releases>`_ and install is manually.
 
 The tool requires Python 2.6 up to Python 3.7.
 
@@ -102,7 +102,7 @@ Source code
 
 SNMP Responder is a free and open source tool. It is distributed under highly
 permissive :doc:`2-clause BSD license </license>`. You can fork or download source code from
-`GitHub <https://github.com/etingof/snmpresponder>`_.
+`GitHub <https://github.com/lextudio/snmpresponder>`_.
 
 Detailed list of new features and fixes could be read in the :doc:`changelog </changelog>`.
 
@@ -110,6 +110,6 @@ Contact
 -------
 
 If something does not work as expected,
-`open an issue <https://github.com/etingof/snmpresponder/issues>`_
+`open an issue <https://github.com/lextudio/pysnmp/issues>`_
 at GitHub or post your question on
 `Stack Overflow <http://stackoverflow.com/questions/ask>`_.

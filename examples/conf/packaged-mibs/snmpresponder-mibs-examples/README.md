@@ -51,7 +51,9 @@ Getting help
 ------------
 
 If something does not work as expected or we are missing an interesting feature,
-[open an issue](https://github.com/etingof/snmpresponder/issues) at GitHub or
+[open an issue](https://github.com/lextudio/pysnmp/issues) at GitHub or
 post your question [on Stack Overflow](https://stackoverflow.com/questions/ask).
 
-Copyright (c) 2019, [Ilya Etingof](mailto:etingof@gmail.com). All rights reserved.
+Copyright (c) 2019, [Ilya Etingof](mailto:etingof@gmail.com).
+Copyright (c) 2022, [LeXtudio Inc.](mailto:support@lextudio.com).
+All rights reserved.

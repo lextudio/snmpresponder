@@ -11,7 +11,7 @@ generally useful and reusable MIB implementations such as
 `HOST-RESOURCES-MIB <http://mibs.pysnmp.com/asn1/HOST-RESOURCES-MIB>`_.
 
 This example configuration includes
-`example Python package <https://github.com/etingof/snmpresponder/tree/master/examples/conf/packaged-mibs/snmpresponder-mibs-examples>`_,
+`example Python package <https://github.com/lextudio/snmpresponder/tree/master/examples/conf/packaged-mibs/snmpresponder-mibs-examples>`_,
 which could be used as a blueprint for packaging other MIB implementations.
 
 You could test this configuration by running the following command (you may need to have

@@ -33,7 +33,7 @@ desired code. User can use the default templates or extend them to adapt to
 their needs.
 
 One of the
-`templates <https://github.com/etingof/pysmi/blob/master/pysmi/codegen/templates/pysnmp/mib-instrumentation/managed-objects-instances.j2>`_
+`templates <https://github.com/lextudio/pysmi/blob/master/pysmi/codegen/templates/pysnmp/mib-instrumentation/managed-objects-instances.j2>`_
 *pysmi* ships can generate MIB instrumentation stubs for managed objects instances i.e.
 the leaf MIB objects representing the instances of MIB scalars of tabular objects.
 
@@ -229,7 +229,7 @@ this:
     }
 
 Alternatively, you could put your *SNMPv2-MIB::sysName.py* implementation file into a
-`Python package <https://github.com/etingof/snmpresponder/tree/master/examples/conf/packaged-mibs/snmpresponder-mibs-examples>`_,
+`Python package <https://github.com/lextudio/snmpresponder/tree/master/examples/conf/packaged-mibs/snmpresponder-mibs-examples>`_,
 then register the directory containing these MIB files via the entry point
 *snmpresponder.mibs*:
 
