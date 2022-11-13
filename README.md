@@ -36,7 +36,7 @@ SNMP Command Responder software is freely available for download from
 Just run:
 
 ```bash
-$ pip install snmpresponder
+$ pip install snmpresponder-lextudio
 ```
 
 Alternatively, you can get it from [GitHub](https://github.com/lextudio/snmpresponder/releases).
