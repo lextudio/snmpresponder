@@ -2,8 +2,8 @@
 SNMP Command Responder
 ----------------------
 
-[![PyPI](https://img.shields.io/pypi/v/snmpresponder.svg?maxAge=2592000)](https://pypi.org/project/snmpresponder)
-[![Python Versions](https://img.shields.io/pypi/pyversions/snmpresponder.svg)](https://pypi.org/project/snmpresponder/)
+[![PyPI](https://img.shields.io/pypi/v/snmpresponder-lextudio.svg?maxAge=2592000)](https://pypi.org/project/snmpresponder-lextudio)
+[![Python Versions](https://img.shields.io/pypi/pyversions/snmpresponder-lextudio.svg)](https://pypi.org/project/snmpresponder-lextudio/)
 [![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)](https://raw.githubusercontent.com/lextudio/snmpresponder/master/LICENSE.txt)
 
 The SNMP Command Responder daemon runs one or more SNMP agents and maintains
@@ -31,7 +31,7 @@ Download & Install
 ------------------
 
 SNMP Command Responder software is freely available for download from
-[PyPI](https://pypi.org/project/snmpresponder).
+[PyPI](https://pypi.org/project/snmpresponder-lextudio).
 
 Just run:
 
