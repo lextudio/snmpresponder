@@ -3,6 +3,7 @@ SNMP Command Responder
 ----------------------
 
 [![PyPI](https://img.shields.io/pypi/v/snmpresponder-lextudio.svg?maxAge=2592000)](https://pypi.org/project/snmpresponder-lextudio)
+[![PyPI Downloads](https://img.shields.io/pypi/dd/snmpresponder-lextudio)](https://pypi.python.org/pypi/snmpresponder-lextudio/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/snmpresponder-lextudio.svg)](https://pypi.org/project/snmpresponder-lextudio/)
 [![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)](https://raw.githubusercontent.com/lextudio/snmpresponder/master/LICENSE.txt)
 
