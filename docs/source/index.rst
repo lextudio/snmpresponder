@@ -95,7 +95,7 @@ The easiest way to download and install SNMP Responder is via Python `pip` tool:
 Alternatively, you can download the Python package from
 `GitHub repo <https://github.com/lextudio/snmpresponder/releases>`_ and install is manually.
 
-The tool requires Python 2.6 up to Python 3.7.
+The tool requires Python 3.7+.
 
 Source code
 -----------
