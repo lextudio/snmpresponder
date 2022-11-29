@@ -106,7 +106,7 @@ html_static_path = ['.static']
 #html_sidebars = {}
 html_theme_options = {
     'logo': 'logo.svg',
-    'description': '<p align=left><i><b>Brewing free software for the greater good</i></b></p>',
+    'description': '<p align=left><i><b>Brewing free software for the communities</i></b></p>',
     'show_powered_by': False,
     'github_user': 'lextudio',
     'github_repo': 'snmpresponder',
