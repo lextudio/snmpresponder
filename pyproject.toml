@@ -38,7 +38,7 @@ pytest = "^6.2.5"
 pytest-codecov = "^0.4.0"
 Sphinx = "^5.0.0"
 sphinx-copybutton = "^0.5.2"
-sphinx-sitemap = "^2.5.1"
+sphinx-sitemap-lextudio = "^2.5.2"
 furo = "^2023.1.1"
 
 [tool.poetry_bumpversion.file."snmpresponder/__init__.py"]
