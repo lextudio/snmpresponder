@@ -44,7 +44,7 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    'sphinx_sitemap'
+    'sphinx_sitemap',
     "notfound.extension",
 ]
 
