@@ -45,7 +45,10 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx_sitemap'
+    "notfound.extension",
 ]
+
+notfound_urls_prefix = "/snmpresponder/"
 
 html_baseurl = 'https://docs.lextudio.com/snmpresponder/'
 sitemap_url_scheme = '{link}'
