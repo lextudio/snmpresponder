@@ -1,8 +1,12 @@
-
-Revision 0.0.3, released XX-02-2019
+Revision 0.0.4, released 16-07-2024
 -----------------------------------
 
-No changes yet
+- Removed package postfix.
+
+Revision 0.0.3, released 13-11-2022
+-----------------------------------
+
+- Packaged by LeXtudio Inc.
 
 Revision 0.0.2, released 31-01-2019
 -----------------------------------
