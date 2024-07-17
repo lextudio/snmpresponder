@@ -90,7 +90,7 @@ The easiest way to download and install SNMP Responder is via Python `pip` tool:
 
 .. code-block:: bash
 
-   # pip install snmpresponder-lextudio
+   # pip install snmpresponder
 
 Alternatively, you can download the Python package from
 `GitHub repo <https://github.com/lextudio/snmpresponder/releases>`_ and install is manually.
