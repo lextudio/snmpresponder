@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "snmpresponder"
-version = "0.0.4"
+version = "0.0.5"
 description = "The SNMP Command Responder application is designed to serve user data over SNMPv1/v2c/v3."
 authors = ["Ilya Etingof <etingof@gmail.com>", "LeXtudio Inc. <support@lextudio.com>"]
 license = "BSD-2-Clause"

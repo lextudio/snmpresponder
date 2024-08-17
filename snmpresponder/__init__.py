@@ -5,4 +5,4 @@
 # License: https://www.pysnmp.com/snmpresponder/license.html
 #
 # http://www.python.org/dev/peps/pep-0396/
-__version__ = '0.0.4'
+__version__ = '0.0.5'
