@@ -8,9 +8,9 @@ import re
 
 from snmpresponder.error import SnmpResponderError
 
-from pysnmp.carrier.asyncore.dgram import udp
+from pysnmp.carrier.asyncio.dgram import udp
 try:
-    from pysnmp.carrier.asyncore.dgram import udp6
+    from pysnmp.carrier.asyncio.dgram import udp6
 except ImportError:
     udp6 = None
 
@@ -20,7 +20,7 @@ def parseTransportAddress(transportDomain, transportAddress, transportOptions, d
          'virtual-interface' in transportOptions) and '$' in transportAddress):
         addrMacro = transportAddress
 
-        if transportDomain[:len(udp.DOMAIN_NAME)] == udp.DOMAIN_NAME:
+        if transportDomain[:len(udp.domainName)] == udp.domainName:
             h, p = '0.0.0.0', defaultPort
         else:
             h, p = '::0', defaultPort
@@ -28,7 +28,7 @@ def parseTransportAddress(transportDomain, transportAddress, transportOptions, d
     else:
         addrMacro = None
 
-        if transportDomain[:len(udp.DOMAIN_NAME)] == udp.DOMAIN_NAME:
+        if transportDomain[:len(udp.domainName)] == udp.domainName:
             if ':' in transportAddress:
                 h, p = transportAddress.split(':', 1)
             else:

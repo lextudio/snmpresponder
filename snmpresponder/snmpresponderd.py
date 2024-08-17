@@ -16,16 +16,16 @@ import pkg_resources
 from pysnmp.error import PySnmpError
 from pysnmp.entity import engine, config
 from pysnmp.entity.rfc3413 import cmdrsp, context
-from pysnmp.carrier.asyncore.dgram import udp
+from pysnmp.carrier.asyncio.dgram import udp
 try:
-    from pysnmp.carrier.asyncore.dgram import udp6
+    from pysnmp.carrier.asyncio.dgram import udp6
 except ImportError:
     udp6 = None
 try:
-    from pysnmp.carrier.asyncore.dgram import unix
+    from pysnmp.carrier.asyncio.dgram import unix
 except ImportError:
     unix = None
-from pysnmp.carrier.asyncore.dispatch import AsyncoreDispatcher
+from pysnmp.carrier.asyncio.dispatch import AsyncioDispatcher
 from pysnmp.proto import rfc1902, rfc1905
 from pysnmp.proto.api import v2c
 from pysnmp.smi import builder
@@ -269,8 +269,8 @@ def main():
             'snmp-transport-domain': variables['transportDomain'],
             'snmp-peer-address': variables['transportAddress'][0],
             'snmp-peer-port': variables['transportAddress'][1],
-            'snmp-bind-address': variables['transportAddress'].getLocalAddress()[0],
-            'snmp-bind-port': variables['transportAddress'].getLocalAddress()[1],
+            'snmp-bind-address': variables['transportAddress'][0],
+            'snmp-bind-port': variables['transportAddress'][1],
             'snmp-security-model': variables['securityModel'],
             'snmp-security-level': variables['securityLevel'],
             'snmp-security-name': variables['securityName'],
@@ -304,7 +304,7 @@ def main():
             else:
                 mibTreeReq['snmp-context-id'] = None
 
-        addr = '%s:%s#%s:%s' % (variables['transportAddress'][0], variables['transportAddress'][1], variables['transportAddress'].getLocalAddress()[0], variables['transportAddress'].getLocalAddress()[1])
+        addr = '%s:%s#%s:%s' % (variables['transportAddress'][0], variables['transportAddress'][1], variables['transportAddress'][0], variables['transportAddress'][1])
 
         for pat, peerId in peerIdMap.get(str(variables['transportDomain']), ()):
             if pat.match(addr):
@@ -476,9 +476,9 @@ Software documentation and support at https://www.pysnmp.com/snmpresponder/
     mibTreeIdMap = {}
     engineIdMap = {}
 
-    transportDispatcher = AsyncoreDispatcher()
+    transportDispatcher = AsyncioDispatcher()
     transportDispatcher.registerRoutingCbFun(lambda td, t, d: td)
-    transportDispatcher.setSocketMap()  # use global asyncore socket map
+    # transportDispatcher.setSocketMap()  # use global asyncore socket map
 
     #
     # Initialize plugin modules
@@ -563,8 +563,8 @@ Software documentation and support at https://www.pysnmp.com/snmpresponder/
         transportDomain = cfgTree.getAttrValue('snmp-transport-domain', *configEntryPath)
         transportDomain = rfc1902.ObjectName(transportDomain)
 
-        if (transportDomain[:len(udp.DOMAIN_NAME)] != udp.DOMAIN_NAME and
-                udp6 and transportDomain[:len(udp6.DOMAIN_NAME)] != udp6.DOMAIN_NAME):
+        if (transportDomain[:len(udp.domainName)] != udp.domainName and
+                udp6 and transportDomain[:len(udp6.domainName)] != udp6.domainName):
             log.error('unknown transport domain %s' % (transportDomain,))
             return
 
@@ -585,7 +585,7 @@ Software documentation and support at https://www.pysnmp.com/snmpresponder/
                 log.error('bad snmp-bind-address specification %s at %s' % (bindAddr, '.'.join(configEntryPath)))
                 return
 
-            if transportDomain[:len(udp.DOMAIN_NAME)] == udp.DOMAIN_NAME:
+            if transportDomain[:len(udp.domainName)] == udp.domainName:
                 transport = udp.UdpTransport()
             else:
                 transport = udp6.Udp6Transport()
