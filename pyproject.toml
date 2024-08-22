@@ -30,7 +30,7 @@ include = ["docs", "tests", "examples"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pysnmp = ">=5.0.0"
+pysnmp = ">=5.0.0,<7.0.0"
 
 [tool.poetry.dev-dependencies]
 codecov = "^2.1.12"
