@@ -1,3 +1,8 @@
+Revision 0.0.6, released 22-08-2024
+-----------------------------------
+
+- Excluded PySNMP 7.0 due to incompatibility issues.
+
 Revision 0.0.5, released 16-08-2024
 -----------------------------------
 
